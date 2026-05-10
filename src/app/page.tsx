@@ -4,13 +4,17 @@ import { InteractiveChannels } from "@/components/ui/interactive-channels";
 import { LiveTerminal } from "@/components/ui/live-terminal";
 import { Footer } from "@/components/layout/footer";
 
-const VERTICALS = [
-  { slug: "wine-and-spirits", label: "[WINE & SPIRITS]",   signal: "1,847 distributors · US three-tier system mapped",                href: "/verticals/wine-and-spirits" },
-  { slug: "insurance",        label: "[INSURANCE]",        signal: "~600K producers · TX·FL·NY·IL·CA · line-of-authority segmented",  href: "/verticals/insurance" },
-  { slug: "factoring",        label: "[FACTORING]",        signal: "UCC-1 × EIDL · borrower-debt + distress signal",                  href: "/verticals/factoring" },
-  { slug: "vertical-saas",    label: "[VERTICAL SAAS]",    signal: "DOL 5500 × SBA · plan sponsor + 35-yr borrower history",          href: "/verticals/vertical-saas" },
-  { slug: "private-equity",   label: "[PRIVATE EQUITY]",   signal: "SEC ADV × 990-PF · registrants + foundation principals",          href: "/verticals/private-equity" },
-  { slug: "real-estate",      label: "[REAL ESTATE]",      signal: "HMDA 60M+ × NYC property · LLC-principal bridge",                 href: "/verticals/real-estate" },
+const PAIRS = [
+  { supply: "UCC-1 × EIDL DISTRESS",                  demand: "Equipment finance / ABL",            href: "/verticals/factoring" },
+  { supply: "HMDA × NYC PROPERTY × FEC OWNER",        demand: "Multifamily acquirers",              href: "/verticals/real-estate" },
+  { supply: "DOL 5500 × SBA × USPTO TM",              demand: "Vertical-SaaS roll-ups",             href: "/verticals/vertical-saas" },
+  { supply: "SEC ADV × 990-PF × FEC",                 demand: "PE / family-office advisors",        href: "/verticals/private-equity" },
+  { supply: "STATE DOI × LICENSE RENEWALS",           demand: "Insurance-agency roll-ups",          href: "/verticals/insurance" },
+  { supply: "TTB × STATE LIQUOR × USPTO TM",          demand: "Spirits-PE roll-ups",                href: "/verticals/wine-and-spirits" },
+  { supply: "CMS PECOS × DMEPOS SURETY BONDS",        demand: "Surety-bond brokers",                href: "mailto:team@engineereddemand.com" },
+  { supply: "SAM OPPS × USASPENDING NEW AWARDS",      demand: "Equipment finance to govcons",       href: "mailto:team@engineereddemand.com" },
+  { supply: "NMLS × HMDA LOAN OFFICER VOLUME",        demand: "Mortgage-vertical lenders",          href: "mailto:team@engineereddemand.com" },
+  { supply: "PPP × EIDL × USPTO BRAND REGISTRY",      demand: "DTC roll-up funds / search funds",   href: "mailto:team@engineereddemand.com" },
 ];
 
 export default function Home() {
@@ -198,36 +202,37 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SECTION 6.5 — Where the graph lands (verticals woven inline) */}
+      {/* SECTION 6.5 — Markets we make (matching-engine frame) */}
       <section className="px-6 md:px-12 lg:px-24 py-24 border-b border-border/50 bg-[#0a0a0a]">
         <div className="flex items-center gap-3 mb-8">
           <div className="h-px w-8 bg-primary" />
           <span className="font-mono text-primary text-xs tracking-widest uppercase">
-            The Arenas
+            The Markets
           </span>
         </div>
         <h2 className="text-3xl md:text-5xl font-heading mb-6 max-w-3xl">
-          Where the graph lands.
+          Markets we make.
         </h2>
         <p className="font-mono text-muted-foreground text-sm max-w-2xl leading-relaxed mb-16">
-          The graph spans every regulator silo. The audiences fall out by vertical — each with its own primary-source cohort grain.
+          Supply-side inflection meets demand-side ICP. Both sides observed in real time.
         </p>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 border-t border-border/50">
-          {VERTICALS.map((v) => (
+        <div className="border-t border-border/50">
+          {PAIRS.map((p, i) => (
             <Link
-              key={v.slug}
-              href={v.href}
-              className="group flex items-center justify-between gap-4 border-b border-border/50 py-6 hover:border-primary/40 transition-colors"
+              key={i}
+              href={p.href}
+              className="group grid grid-cols-[1fr_auto_1fr_auto] items-center gap-3 md:gap-6 border-b border-border/50 py-5 hover:border-primary/40 transition-colors"
             >
-              <div className="flex flex-col gap-2 min-w-0">
-                <span className="font-mono text-primary text-xs tracking-widest uppercase">
-                  {v.label}
-                </span>
-                <span className="font-mono text-sm text-muted-foreground leading-relaxed">
-                  {v.signal}
-                </span>
-              </div>
+              <span className="font-mono text-foreground text-xs md:text-sm tracking-widest uppercase truncate">
+                {p.supply}
+              </span>
+              <span className="font-mono text-primary text-xs md:text-sm shrink-0">
+                ↔
+              </span>
+              <span className="font-mono text-muted-foreground text-xs md:text-sm truncate">
+                {p.demand}
+              </span>
               <span className="font-mono text-muted-foreground group-hover:text-primary transition-colors shrink-0">
                 ↗
               </span>
