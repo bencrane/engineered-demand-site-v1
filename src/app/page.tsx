@@ -86,7 +86,7 @@ export default function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-4 border border-border/50 rounded-lg overflow-hidden lg:divide-x lg:divide-y-0 divide-y divide-border/50 bg-[#111]">
           {/* Node 1 */}
           <div className="p-8 relative group">
-            <div className="flex items-center justify-between mb-8">
+            <div className="flex flex-col gap-3 mb-8">
               <span className="font-mono text-foreground tracking-widest text-sm">01 INGESTION</span>
               <div className="flex items-center gap-2 font-mono text-[10px] text-muted-foreground">
                 <div className="w-1.5 h-1.5 bg-gray-500 rounded-full" />
@@ -100,7 +100,7 @@ export default function Home() {
           
            {/* Node 2 */}
           <div className="p-8 relative group">
-            <div className="flex items-center justify-between mb-8">
+            <div className="flex flex-col gap-3 mb-8">
               <span className="font-mono text-foreground tracking-widest text-sm">02 SIGNAL</span>
               <div className="flex items-center gap-2 font-mono text-[10px] text-primary/60">
                 <div className="w-1.5 h-1.5 bg-primary/60 rounded-full animate-pulse" />
@@ -114,7 +114,7 @@ export default function Home() {
 
           {/* Node 3 */}
           <div className="p-8 relative group">
-            <div className="flex items-center justify-between mb-8">
+            <div className="flex flex-col gap-3 mb-8">
               <span className="font-mono text-foreground tracking-widest text-sm">03 INFRASTRUCTURE</span>
               <div className="flex items-center gap-2 font-mono text-[10px] text-primary">
                 <div className="w-1.5 h-1.5 bg-primary rounded-full animate-pulse shadow-[0_0_4px_rgba(16,185,129,0.4)]" />
@@ -128,7 +128,7 @@ export default function Home() {
 
           {/* Node 4 */}
           <div className="p-8 relative group">
-            <div className="flex items-center justify-between mb-8">
+            <div className="flex flex-col gap-3 mb-8">
               <span className="font-mono text-foreground tracking-widest text-sm">04 OUTPUT</span>
               <div className="flex items-center gap-2 font-mono text-[10px] text-primary">
                 <div className="w-1.5 h-1.5 bg-primary rounded-full animate-pulse shadow-[0_0_12px_rgba(16,185,129,0.8)]" />
