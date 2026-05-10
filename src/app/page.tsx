@@ -172,7 +172,7 @@ export default function Home() {
               Total system visibility.
             </h2>
             <p className="font-mono text-sm text-muted-foreground leading-relaxed mb-12">
-              Client dashboards display strict operational telemetry: total signal yield, message delivery rates, localized conversion metrics, and hard pipeline booked.
+              Dashboards display strict operational telemetry: total signal yield, message delivery rates, localized conversion metrics, and hard pipeline booked.
             </p>
             
             <div className="space-y-6">
