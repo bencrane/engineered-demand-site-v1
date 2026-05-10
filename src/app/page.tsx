@@ -67,10 +67,10 @@ export default function Home() {
       {/* SECTION 4 — The Engine */}
       <section className="px-6 md:px-12 lg:px-24 py-24 border-b border-border/50">
         <h2 className="text-3xl md:text-5xl font-heading mb-6 max-w-3xl">
-          A pipeline engine built like a trading desk.
+          A pipeline engine built on regulator-grade signal.
         </h2>
         <p className="font-mono text-muted-foreground text-sm mb-16">
-          Signal detection. Isolated infrastructure. Coordinated execution.
+          Primary-source filings. Cross-source identity. Coordinated outbound.
         </p>
 
         <div className="grid grid-cols-1 lg:grid-cols-4 border border-border/50 rounded-lg overflow-hidden lg:divide-x lg:divide-y-0 divide-y divide-border/50 bg-[#111]">
