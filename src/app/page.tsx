@@ -37,10 +37,10 @@ export default function Home() {
           {/* Card 1 */}
           <div className="flex flex-col bg-[#111] border border-border/50 p-8 rounded-lg">
             <span className="font-mono text-primary text-sm tracking-widest mb-6 border border-primary/30 bg-primary/10 w-fit px-3 py-1 rounded inline-block">
-              [01] The Data Problem
+              [01] The Silo Problem
             </span>
             <p className="font-mono text-sm text-muted-foreground leading-relaxed">
-              Standard databases do not capture niche inflection points. They sell stale lists. We ingest unformatted public, private, and governmental records to map relationships dynamically.
+              Standard vendors specialize in one regulator silo. CoreLogic owns mortgages. RCA owns CRE. Bloomberg is the expensive generalist. We resolve identity across all of them — FEC, HMDA, Form 990, NMLS, SAM, GLEIF, more — into one queryable graph. The cross-source bridge is the moat.
             </p>
           </div>
           {/* Card 2 */}
