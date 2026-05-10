@@ -241,15 +241,24 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SECTION 7 — CTA / The Gate */}
+      {/* SECTION 7 — Who we work with (Klaff-qualified frame closure) */}
       <section className="px-6 md:px-12 lg:px-24 py-32 flex flex-col items-center justify-center text-center bg-[#050505]">
         <div className="w-4 h-4 bg-primary mb-8 shadow-[0_0_15px_rgba(16,185,129,0.5)] animate-pulse" />
-        <h2 className="text-5xl md:text-7xl font-heading mb-8">
-          Own Your Market.
+        <div className="flex items-center gap-3 mb-6">
+          <div className="h-px w-8 bg-primary" />
+          <span className="font-mono text-primary text-xs tracking-widest uppercase">
+            Who we work with
+          </span>
+          <div className="h-px w-8 bg-primary" />
+        </div>
+        <h2 className="text-4xl md:text-6xl lg:text-7xl font-heading mb-10 max-w-3xl">
+          Three things have to be true.
         </h2>
-        <p className="font-mono text-muted-foreground text-sm md:text-base max-w-2xl mx-auto mb-10 leading-relaxed">
-          Built for companies with a defined market and the sales capacity to close what we generate.
-        </p>
+        <div className="font-mono text-muted-foreground text-sm md:text-base max-w-2xl mx-auto mb-12 leading-relaxed space-y-4">
+          <p>Capital allocators with a thesis — PE, family office, search funds, specialist brokers. Not first-time outbound buyers.</p>
+          <p>Deal-team capacity to absorb the volume without a hiring cycle.</p>
+          <p>Decision speed at the pace of a fresh filing. Public-record signals decay in days.</p>
+        </div>
         <a
           href="mailto:team@engineereddemand.com"
           className="inline-flex items-center justify-center font-medium whitespace-nowrap h-14 px-8 font-mono text-sm uppercase tracking-widest bg-foreground text-background hover:bg-primary hover:text-black transition-all duration-300 rounded-none shadow-[0_0_0_rgba(16,185,129,0)] hover:shadow-[0_0_20px_rgba(16,185,129,0.4)]"
