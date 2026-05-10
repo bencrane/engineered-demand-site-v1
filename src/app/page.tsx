@@ -42,6 +42,45 @@ export default function Home() {
       {/* SECTION 2 — Signal Ticker Ribbon */}
       <SignalTicker />
 
+      {/* SECTION 2.5 — Markets we make (matching-engine frame, moved up for narrative flow) */}
+      <section className="px-6 md:px-12 lg:px-24 py-24 border-b border-border/50 bg-[#0a0a0a]">
+        <div className="flex items-center gap-3 mb-8">
+          <div className="h-px w-8 bg-primary" />
+          <span className="font-mono text-primary text-xs tracking-widest uppercase">
+            The Markets
+          </span>
+        </div>
+        <h2 className="text-3xl md:text-5xl font-heading mb-6 max-w-3xl">
+          Markets we make.
+        </h2>
+        <p className="font-mono text-muted-foreground text-sm max-w-2xl leading-relaxed mb-16">
+          Supply-side inflection meets demand-side ICP. Both sides observed in real time.
+        </p>
+
+        <div className="border-t border-border/50">
+          {PAIRS.map((p, i) => (
+            <Link
+              key={i}
+              href={p.href}
+              className="group grid grid-cols-[1fr_auto_1fr_auto] items-center gap-3 md:gap-6 border-b border-border/50 py-5 hover:border-primary/40 transition-colors"
+            >
+              <span className="font-mono text-foreground text-xs md:text-sm tracking-widest uppercase truncate">
+                {p.supply}
+              </span>
+              <span className="font-mono text-primary text-xs md:text-sm shrink-0">
+                ↔
+              </span>
+              <span className="font-mono text-muted-foreground text-xs md:text-sm truncate">
+                {p.demand}
+              </span>
+              <span className="font-mono text-muted-foreground group-hover:text-primary transition-colors shrink-0">
+                ↗
+              </span>
+            </Link>
+          ))}
+        </div>
+      </section>
+
       {/* SECTION 3 — The Three Problems */}
       <section className="px-6 md:px-12 lg:px-24 py-24 border-b border-border/50 bg-[#0a0a0a]">
         <h2 className="text-3xl md:text-5xl font-heading mb-16 max-w-3xl">
@@ -199,45 +238,6 @@ export default function Home() {
             <div className="absolute inset-0 bg-primary/5 blur-[100px] pointer-events-none" />
             <LiveTerminal />
           </div>
-        </div>
-      </section>
-
-      {/* SECTION 6.5 — Markets we make (matching-engine frame) */}
-      <section className="px-6 md:px-12 lg:px-24 py-24 border-b border-border/50 bg-[#0a0a0a]">
-        <div className="flex items-center gap-3 mb-8">
-          <div className="h-px w-8 bg-primary" />
-          <span className="font-mono text-primary text-xs tracking-widest uppercase">
-            The Markets
-          </span>
-        </div>
-        <h2 className="text-3xl md:text-5xl font-heading mb-6 max-w-3xl">
-          Markets we make.
-        </h2>
-        <p className="font-mono text-muted-foreground text-sm max-w-2xl leading-relaxed mb-16">
-          Supply-side inflection meets demand-side ICP. Both sides observed in real time.
-        </p>
-
-        <div className="border-t border-border/50">
-          {PAIRS.map((p, i) => (
-            <Link
-              key={i}
-              href={p.href}
-              className="group grid grid-cols-[1fr_auto_1fr_auto] items-center gap-3 md:gap-6 border-b border-border/50 py-5 hover:border-primary/40 transition-colors"
-            >
-              <span className="font-mono text-foreground text-xs md:text-sm tracking-widest uppercase truncate">
-                {p.supply}
-              </span>
-              <span className="font-mono text-primary text-xs md:text-sm shrink-0">
-                ↔
-              </span>
-              <span className="font-mono text-muted-foreground text-xs md:text-sm truncate">
-                {p.demand}
-              </span>
-              <span className="font-mono text-muted-foreground group-hover:text-primary transition-colors shrink-0">
-                ↗
-              </span>
-            </Link>
-          ))}
         </div>
       </section>
 
