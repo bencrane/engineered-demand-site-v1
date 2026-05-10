@@ -216,7 +216,7 @@ export default function Home() {
             
             <div className="space-y-6">
               <div className="flex justify-between items-center border-b border-border/50 pb-4 font-mono text-sm">
-                <span className="text-muted-foreground">Cost per meeting</span>
+                <span className="text-muted-foreground">Cost per match</span>
                 <span className="text-foreground border border-border/50 bg-[#111] px-3 py-1 rounded">Tracked Live</span>
               </div>
               <div className="flex justify-between items-center border-b border-border/50 pb-4 font-mono text-sm">
@@ -256,7 +256,7 @@ export default function Home() {
         </h2>
         <div className="font-mono text-muted-foreground text-sm md:text-base max-w-2xl mx-auto mb-12 leading-relaxed space-y-4">
           <p>Capital allocators with a thesis — PE, family office, search funds, specialist brokers. Not first-time outbound buyers.</p>
-          <p>Deal-team capacity to absorb the volume without a hiring cycle.</p>
+          <p>Deal-team capacity for new business — without a hiring cycle.</p>
           <p>Decision speed at the pace of a fresh filing. Public-record signals decay in days.</p>
         </div>
         <a

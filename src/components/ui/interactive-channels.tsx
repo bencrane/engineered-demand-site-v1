@@ -344,7 +344,7 @@ export function InteractiveChannels() {
               </div>
               <div>
                 <span className="text-muted-foreground uppercase block mb-1">Pipeline Yield</span>
-                <span className="text-xl text-foreground">6 Meetings MTD</span>
+                <span className="text-xl text-foreground">6 Quote Requests MTD</span>
               </div>
             </div>
           </div>
