@@ -194,10 +194,10 @@ export default function Home() {
           </span>
         </div>
         <h2 className="text-3xl md:text-5xl font-heading mb-6">
-          We reach them <span className="text-primary italic">where they are.</span>
+          Channels we <span className="text-primary italic">own</span>, at scale.
         </h2>
         <p className="font-mono text-muted-foreground text-sm max-w-2xl leading-relaxed mb-16">
-          Each channel is infrastructure we've built — not tools we use. Signal data flows through, personalized messages flow out.
+          Email, voice, direct mail, LinkedIn — infrastructure we built ourselves, single-tenant and authenticated. We work the channel the signal lands on.
         </p>
         
         <InteractiveChannels />
