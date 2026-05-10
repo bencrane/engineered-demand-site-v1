@@ -100,15 +100,15 @@ export function InteractiveChannels() {
                 <div className="text-xs text-muted-foreground uppercase tracking-wider mb-4 border-b border-border/50 pb-2">Active Infrastructure Nodes</div>
                 <div className="space-y-3 text-xs">
                   <div className="flex justify-between items-center bg-[#111] p-2 rounded">
-                    <span>mx-01.outbound-cayeya.com</span>
+                    <span>mx-01.outbound-apex-eqfin.com</span>
                     <span className="text-primary flex items-center gap-2"><div className="w-1.5 h-1.5 bg-primary rounded-full"/> ACTIVE</span>
                   </div>
                   <div className="flex justify-between items-center bg-[#111] p-2 rounded">
-                    <span>mx-02.outbound-cayeya.com</span>
+                    <span>mx-02.outbound-apex-eqfin.com</span>
                     <span className="text-primary flex items-center gap-2"><div className="w-1.5 h-1.5 bg-primary rounded-full"/> ACTIVE</span>
                   </div>
                   <div className="flex justify-between items-center bg-[#111] p-2 rounded">
-                    <span>mx-03.outbound-cayeya.com</span>
+                    <span>mx-03.outbound-apex-eqfin.com</span>
                     <span className="text-yellow-500 flex items-center gap-2"><div className="w-1.5 h-1.5 bg-yellow-500 rounded-full animate-pulse"/> WARMING</span>
                   </div>
                 </div>
@@ -129,7 +129,7 @@ export function InteractiveChannels() {
               <div className="space-y-4">
                 <div className="flex items-center gap-2">
                   <span className="text-muted-foreground min-w-[45px] shrink-0">15:04</span>
-                  <span className="text-foreground truncate min-w-0 flex-1">R. Nava, Elgin Wines</span>
+                  <span className="text-foreground truncate min-w-0 flex-1">M. Sandoval, Acme Defense</span>
                   <span className="text-muted-foreground hidden lg:inline">→</span>
                   <span className="text-primary shrink-0 whitespace-nowrap">CONNECTED 3:42</span>
                   <span className="text-muted-foreground hidden lg:inline">→</span>
@@ -137,7 +137,7 @@ export function InteractiveChannels() {
                 </div>
                 <div className="flex items-center gap-2 opacity-70">
                   <span className="text-muted-foreground min-w-[45px] shrink-0">14:51</span>
-                  <span className="text-foreground truncate min-w-0 flex-1">T. Marsh, Oak & Vine</span>
+                  <span className="text-foreground truncate min-w-0 flex-1">G. Park, Helix Aero</span>
                   <span className="text-muted-foreground hidden lg:inline">→</span>
                   <span className="text-yellow-500 shrink-0 whitespace-nowrap">VOICEMAIL</span>
                   <span className="text-muted-foreground hidden lg:inline">→</span>
@@ -145,7 +145,7 @@ export function InteractiveChannels() {
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-muted-foreground min-w-[45px] shrink-0">14:38</span>
-                  <span className="text-foreground truncate min-w-0 flex-1">J. Lam, Peak Spirits</span>
+                  <span className="text-foreground truncate min-w-0 flex-1">J. Patel, Bedrock Marine</span>
                   <span className="text-muted-foreground hidden lg:inline">→</span>
                   <span className="text-primary shrink-0 whitespace-nowrap">LIVE_TRANSFER</span>
                   <span className="text-muted-foreground hidden lg:inline">→</span>
@@ -153,7 +153,7 @@ export function InteractiveChannels() {
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-muted-foreground min-w-[45px] shrink-0">14:22</span>
-                  <span className="text-foreground truncate min-w-0 flex-1">M. Ortiz, Bayshore Bev</span>
+                  <span className="text-foreground truncate min-w-0 flex-1">R. Cole, Forge Mfg</span>
                   <span className="text-muted-foreground hidden lg:inline">→</span>
                   <span className="text-primary shrink-0 whitespace-nowrap">CONNECTED 2:05</span>
                   <span className="text-muted-foreground hidden lg:inline">→</span>
@@ -181,7 +181,7 @@ export function InteractiveChannels() {
                 <div className="flex flex-col sm:flex-row gap-4 sm:gap-8">
                   <div>
                     <span className="text-muted-foreground">Caller: </span>
-                    <span className="text-foreground">Mike Torres, Fleet Owner, 22 trucks</span>
+                    <span className="text-foreground">M. Torres, CFO @ Acme Defense, $4.2M Q3 award</span>
                   </div>
                   <div>
                     <span className="text-muted-foreground">Qualified: </span>
@@ -189,7 +189,7 @@ export function InteractiveChannels() {
                   </div>
                   <div>
                     <span className="text-muted-foreground">Transferred to: </span>
-                    <span className="text-foreground">Apex Insurance Group</span>
+                    <span className="text-foreground">Apex Equipment Finance</span>
                   </div>
                   <div className="mt-2 sm:mt-0 sm:ml-auto">
                     <span className="text-primary font-bold">CONNECTED 2:14</span>
@@ -208,11 +208,11 @@ export function InteractiveChannels() {
               {/* Front */}
               <div className="w-full max-w-[320px] aspect-[1.5/1] bg-[#0a0a0a] border border-border/50 rounded shadow-2xl relative overflow-hidden flex flex-col justify-between p-6">
                 <div className="w-16 h-1 bg-primary mb-4" />
-                <div className="font-heading text-2xl text-foreground">Cayéya Tequila</div>
+                <div className="font-heading text-2xl text-foreground">Apex Equipment Finance</div>
                 <div className="mt-auto flex justify-between items-end">
                   <div className="font-mono text-[10px] text-muted-foreground uppercase">
-                    Specially prepared for:<br/>
-                    <span className="text-foreground text-xs mt-1 block">Sarah Jenkins<br/>Atlas Beverage</span>
+                    Term sheet prepared for:<br/>
+                    <span className="text-foreground text-xs mt-1 block">M. Sandoval<br/>Acme Defense</span>
                   </div>
                   <div className="w-12 h-12 bg-white flex items-center justify-center p-1">
                     {/* Mock QR */}
@@ -244,23 +244,23 @@ export function InteractiveChannels() {
                   </thead>
                   <tbody className="text-foreground">
                     <tr className="border-b border-border/50">
-                      <td className="py-3 px-2">Sarah J.</td>
-                      <td className="py-3 px-2 text-muted-foreground">Atlas Beverage</td>
+                      <td className="py-3 px-2">M. Sandoval</td>
+                      <td className="py-3 px-2 text-muted-foreground">Acme Defense</td>
                       <td className="py-3 px-2 text-primary font-bold">QR_SCANNED [14:02]</td>
                     </tr>
                     <tr className="border-b border-border/50">
-                      <td className="py-3 px-2">Marcus V.</td>
-                      <td className="py-3 px-2 text-muted-foreground">Empire Spirits</td>
+                      <td className="py-3 px-2">G. Park</td>
+                      <td className="py-3 px-2 text-muted-foreground">Helix Aero</td>
                       <td className="py-3 px-2 text-foreground">DELIVERED</td>
                     </tr>
                     <tr className="border-b border-border/50">
-                      <td className="py-3 px-2">Elena R.</td>
-                      <td className="py-3 px-2 text-muted-foreground">Meridian Dist</td>
+                      <td className="py-3 px-2">J. Patel</td>
+                      <td className="py-3 px-2 text-muted-foreground">Bedrock Marine</td>
                       <td className="py-3 px-2 text-foreground">DELIVERED</td>
                     </tr>
                     <tr className="border-b border-border/50 opacity-60">
-                      <td className="py-3 px-2">David P.</td>
-                      <td className="py-3 px-2 text-muted-foreground">Coastal Bev</td>
+                      <td className="py-3 px-2">R. Cole</td>
+                      <td className="py-3 px-2 text-muted-foreground">Forge Mfg</td>
                       <td className="py-3 px-2 text-yellow-500">IN_TRANSIT</td>
                     </tr>
                   </tbody>
@@ -303,7 +303,7 @@ export function InteractiveChannels() {
                   <span className="text-primary text-xs border border-primary/50 bg-primary/10 px-2 py-0.5 rounded">ACCEPTED</span>
                 </div>
                 <div className="bg-[#111] border border-border/50 p-4 rounded text-muted-foreground text-xs leading-relaxed">
-                  "Sarah - saw Atlas recently shifted parts of the agave portfolio. We're an independent Jalisco brand growing fast in the state. Would love to connect."
+                  "Mike — congrats on the Q3 prime-vendor award. We finance equipment for awarded govcons (term sheet in 24h, sized off your UEI obligation profile). Worth connecting?"
                 </div>
               </div>
 
@@ -315,7 +315,7 @@ export function InteractiveChannels() {
                   <span className="text-muted-foreground text-xs border border-border/50 bg-background px-2 py-0.5 rounded">SENT (DAY 2)</span>
                 </div>
                 <div className="bg-[#111] border border-border/50 p-4 rounded text-muted-foreground text-xs leading-relaxed">
-                  "Thanks for connecting. Are you open to reviewing a new single-barrel reposado? We have unallocated supply and margin built for distribution partners."
+                  "Thanks for connecting. Want a sample term sheet sized to your $4.2M obligation? We underwrite from UEI lifetime obligation profile, so eligibility is fast."
                 </div>
               </div>
 
@@ -327,7 +327,7 @@ export function InteractiveChannels() {
                   <span className="text-primary text-xs border border-primary/50 bg-primary/10 px-2 py-0.5 rounded">REPLIED (DAY 5)</span>
                 </div>
                 <div className="bg-[#111] border border-border/50 p-4 rounded text-muted-foreground text-xs leading-relaxed">
-                  "Bringing this to the top of your inbox. We're finalizing terms with a few accounts in your region next week. Worth a quick chat?"
+                  "Bringing this to the top of your inbox. We're finalizing terms with a few new awardees in your region next week. Worth a quick chat?"
                 </div>
               </div>
 
