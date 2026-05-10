@@ -5,16 +5,12 @@ import { LiveTerminal } from "@/components/ui/live-terminal";
 import { Footer } from "@/components/layout/footer";
 
 const PAIRS = [
-  { supply: "UCC-1 × EIDL DISTRESS",                  demand: "Equipment finance / ABL",            href: "/verticals/factoring" },
-  { supply: "HMDA × NYC PROPERTY × FEC OWNER",        demand: "Multifamily acquirers",              href: "/verticals/real-estate" },
-  { supply: "DOL 5500 × SBA × USPTO TM",              demand: "Vertical-SaaS roll-ups",             href: "/verticals/vertical-saas" },
-  { supply: "SEC ADV × 990-PF × FEC",                 demand: "PE / family-office advisors",        href: "/verticals/private-equity" },
-  { supply: "STATE DOI × LICENSE RENEWALS",           demand: "Insurance-agency roll-ups",          href: "/verticals/insurance" },
-  { supply: "TTB × STATE LIQUOR × USPTO TM",          demand: "Spirits-PE roll-ups",                href: "/verticals/wine-and-spirits" },
-  { supply: "CMS PECOS × DMEPOS SURETY BONDS",        demand: "Surety-bond brokers",                href: "mailto:team@engineereddemand.com" },
-  { supply: "SAM OPPS × USASPENDING NEW AWARDS",      demand: "Equipment finance to govcons",       href: "mailto:team@engineereddemand.com" },
-  { supply: "NMLS × HMDA LOAN OFFICER VOLUME",        demand: "Mortgage-vertical lenders",          href: "mailto:team@engineereddemand.com" },
-  { supply: "PPP × EIDL × USPTO BRAND REGISTRY",      demand: "DTC roll-up funds / search funds",   href: "mailto:team@engineereddemand.com" },
+  { supply: "UCC-1 × EIDL DISTRESS",            demand: "Equipment finance / ABL",       observed: "~5K / qtr",     speed: "T+24h",  href: "/verticals/factoring" },
+  { supply: "HMDA × NYC × FEC OWNER",           demand: "Multifamily acquirers",         observed: "~2K / qtr",     speed: "T+30d",  href: "/verticals/real-estate" },
+  { supply: "DOL 5500 × SBA × USPTO TM",        demand: "Vertical-SaaS roll-ups",        observed: "~14K / qtr",    speed: "T+45d",  href: "/verticals/vertical-saas" },
+  { supply: "SEC ADV × 990-PF × FEC",           demand: "PE / family-office advisors",   observed: "~1K / qtr",     speed: "T+90d",  href: "/verticals/private-equity" },
+  { supply: "STATE DOI × LICENSE RENEWALS",     demand: "Insurance-agency roll-ups",     observed: "~600K total",   speed: "T+90d",  href: "/verticals/insurance" },
+  { supply: "TTB × STATE LIQUOR × USPTO TM",    demand: "Spirits-PE roll-ups",           observed: "~3K / qtr",     speed: "T+30d",  href: "/verticals/wine-and-spirits" },
 ];
 
 export default function Home() {
@@ -42,46 +38,7 @@ export default function Home() {
       {/* SECTION 2 — Signal Ticker Ribbon */}
       <SignalTicker />
 
-      {/* SECTION 2.5 — Markets we make (matching-engine frame, moved up for narrative flow) */}
-      <section className="px-6 md:px-12 lg:px-24 py-24 border-b border-border/50 bg-[#0a0a0a]">
-        <div className="flex items-center gap-3 mb-8">
-          <div className="h-px w-8 bg-primary" />
-          <span className="font-mono text-primary text-xs tracking-widest uppercase">
-            The Markets
-          </span>
-        </div>
-        <h2 className="text-3xl md:text-5xl font-heading mb-6 max-w-3xl">
-          Markets we make.
-        </h2>
-        <p className="font-mono text-muted-foreground text-sm max-w-2xl leading-relaxed mb-16">
-          Supply-side inflection meets demand-side ICP. Both sides observed in real time.
-        </p>
-
-        <div className="border-t border-border/50">
-          {PAIRS.map((p, i) => (
-            <Link
-              key={i}
-              href={p.href}
-              className="group grid grid-cols-[1fr_auto_1fr_auto] items-center gap-3 md:gap-6 border-b border-border/50 py-5 hover:border-primary/40 transition-colors"
-            >
-              <span className="font-mono text-foreground text-xs md:text-sm tracking-widest uppercase truncate">
-                {p.supply}
-              </span>
-              <span className="font-mono text-primary text-xs md:text-sm shrink-0">
-                ↔
-              </span>
-              <span className="font-mono text-muted-foreground text-xs md:text-sm truncate">
-                {p.demand}
-              </span>
-              <span className="font-mono text-muted-foreground group-hover:text-primary transition-colors shrink-0">
-                ↗
-              </span>
-            </Link>
-          ))}
-        </div>
-      </section>
-
-      {/* SECTION 3 — The Three Problems */}
+      {/* SECTION 3 — The Three Problems (moved up — frames the world's broken state right after hero) */}
       <section className="px-6 md:px-12 lg:px-24 py-24 border-b border-border/50 bg-[#0a0a0a]">
         <h2 className="text-3xl md:text-5xl font-heading mb-16 max-w-3xl">
           Three problems we've solved.
@@ -182,6 +139,51 @@ export default function Home() {
                Live qualification transfers and booked sequences placed directly on calendar.
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* SECTION 4.5 — Markets we make (placed after the engine, as the engine's output) */}
+      <section className="px-6 md:px-12 lg:px-24 py-24 border-b border-border/50 bg-[#0a0a0a]">
+        <div className="flex items-center gap-3 mb-8">
+          <div className="h-px w-8 bg-primary" />
+          <span className="font-mono text-primary text-xs tracking-widest uppercase">
+            The Markets
+          </span>
+        </div>
+        <h2 className="text-3xl md:text-5xl font-heading mb-6 max-w-3xl">
+          Markets we make.
+        </h2>
+        <p className="font-mono text-muted-foreground text-sm max-w-2xl leading-relaxed mb-16">
+          Supply-side inflection meets demand-side ICP. Both sides observed, identity-resolved, ready to route.
+        </p>
+
+        <div className="border-t border-border/50">
+          {PAIRS.map((p, i) => (
+            <Link
+              key={i}
+              href={p.href}
+              className="group grid grid-cols-[1fr_auto_1fr_auto_auto_auto] items-center gap-3 md:gap-6 border-b border-border/50 py-5 hover:border-primary/40 transition-colors"
+            >
+              <span className="font-mono text-foreground text-xs md:text-sm tracking-widest uppercase truncate">
+                {p.supply}
+              </span>
+              <span className="font-mono text-primary text-xs md:text-sm shrink-0">
+                ↔
+              </span>
+              <span className="font-mono text-muted-foreground text-xs md:text-sm truncate">
+                {p.demand}
+              </span>
+              <span className="font-mono text-foreground text-xs md:text-sm shrink-0 tabular-nums">
+                {p.observed}
+              </span>
+              <span className="font-mono text-muted-foreground text-xs md:text-sm shrink-0 tabular-nums">
+                {p.speed}
+              </span>
+              <span className="font-mono text-muted-foreground group-hover:text-primary transition-colors shrink-0">
+                ↗
+              </span>
+            </Link>
+          ))}
         </div>
       </section>
 
