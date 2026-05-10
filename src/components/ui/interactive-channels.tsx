@@ -47,25 +47,25 @@ export function InteractiveChannels() {
                 <div className="mb-6 pb-6 border-b border-border/50">
                   <div className="flex gap-4 mb-2">
                     <span className="text-muted-foreground w-16">From:</span>
-                    <span className="text-foreground">james@outbound-cayeya.com</span>
+                    <span className="text-foreground">jamie@outbound-apex-eqfin.com</span>
                   </div>
                   <div className="flex gap-4">
                     <span className="text-muted-foreground w-16">Subject:</span>
-                    <span className="text-foreground font-medium">Cayéya — open slot in your portfolio?</span>
+                    <span className="text-foreground font-medium">Q3 DOD award $4.2M — financing terms</span>
                   </div>
                 </div>
                 <div className="text-muted-foreground leading-relaxed whitespace-pre-wrap">
-                  {`Hi Sarah — I noticed Atlas Beverage recently dropped [competitor brand] from your spirits portfolio.\n\nCayéya is a single-barrel tequila out of Jalisco with retail presence in 8 states and growing. Would it make sense to send samples and a one-pager to your category team?\n\nHappy to work around your timeline.`}
+                  {`Hi Mike — congrats on the $4.2M DOD prime-vendor award at Acme Defense (notice 75D03X-2026).\n\nApex underwrites equipment finance up to $5M for fresh awardees, sized off your UEI lifetime obligation profile. Same-day quote, terms within 24h.\n\nHappy to pull a term sheet today.`}
                 </div>
               </div>
               <div className="bg-[#0a0a0a] border-t border-border/50 p-4 flex flex-col xl:flex-row gap-3 xl:gap-6 font-mono text-[11px] uppercase tracking-wider text-muted-foreground overflow-x-auto">
                 <div className="flex items-center gap-2 whitespace-nowrap">
                   <span>VARIANT A</span>
-                  <span className="text-primary">8.2% POSITIVE REPLY / 28 MEETINGS BOOKED</span>
+                  <span className="text-primary">9.4% POSITIVE REPLY / 38 QUOTE REQUESTS</span>
                 </div>
                 <div className="flex items-center gap-2 opacity-50 whitespace-nowrap">
                   <span>VARIANT B</span>
-                  <span>6.7% POSITIVE REPLY / 23 MEETINGS BOOKED</span>
+                  <span>7.8% POSITIVE REPLY / 31 QUOTE REQUESTS</span>
                 </div>
               </div>
             </div>
