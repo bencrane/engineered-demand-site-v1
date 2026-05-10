@@ -84,7 +84,7 @@ export default function Home() {
       {/* SECTION 3 — The Three Problems */}
       <section className="px-6 md:px-12 lg:px-24 py-24 border-b border-border/50 bg-[#0a0a0a]">
         <h2 className="text-3xl md:text-5xl font-heading mb-16 max-w-3xl">
-          Three load-bearing problems.
+          Three problems we've solved.
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-12">
           {/* Card 1 */}
