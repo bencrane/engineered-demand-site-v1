@@ -87,7 +87,10 @@ export default function Home() {
           {/* Node 1 */}
           <div className="p-8 relative group">
             <div className="flex flex-col gap-3 mb-8">
-              <span className="font-mono text-foreground tracking-widest text-sm">01 INGESTION</span>
+              <div>
+                <div className="font-mono text-muted-foreground text-xs tracking-widest mb-1.5">01</div>
+                <div className="font-mono text-foreground tracking-widest text-sm">INGESTION</div>
+              </div>
               <div className="flex items-center gap-2 font-mono text-[10px] text-muted-foreground">
                 <div className="w-1.5 h-1.5 bg-gray-500 rounded-full" />
                 STANDBY
@@ -101,7 +104,10 @@ export default function Home() {
            {/* Node 2 */}
           <div className="p-8 relative group">
             <div className="flex flex-col gap-3 mb-8">
-              <span className="font-mono text-foreground tracking-widest text-sm">02 SIGNAL</span>
+              <div>
+                <div className="font-mono text-muted-foreground text-xs tracking-widest mb-1.5">02</div>
+                <div className="font-mono text-foreground tracking-widest text-sm">SIGNAL</div>
+              </div>
               <div className="flex items-center gap-2 font-mono text-[10px] text-primary/60">
                 <div className="w-1.5 h-1.5 bg-primary/60 rounded-full animate-pulse" />
                 ANALYZING
@@ -115,7 +121,10 @@ export default function Home() {
           {/* Node 3 */}
           <div className="p-8 relative group">
             <div className="flex flex-col gap-3 mb-8">
-              <span className="font-mono text-foreground tracking-widest text-sm">03 INFRASTRUCTURE</span>
+              <div>
+                <div className="font-mono text-muted-foreground text-xs tracking-widest mb-1.5">03</div>
+                <div className="font-mono text-foreground tracking-widest text-sm">INFRASTRUCTURE</div>
+              </div>
               <div className="flex items-center gap-2 font-mono text-[10px] text-primary">
                 <div className="w-1.5 h-1.5 bg-primary rounded-full animate-pulse shadow-[0_0_4px_rgba(16,185,129,0.4)]" />
                 ACTIVE
@@ -129,7 +138,10 @@ export default function Home() {
           {/* Node 4 */}
           <div className="p-8 relative group">
             <div className="flex flex-col gap-3 mb-8">
-              <span className="font-mono text-foreground tracking-widest text-sm">04 OUTPUT</span>
+              <div>
+                <div className="font-mono text-muted-foreground text-xs tracking-widest mb-1.5">04</div>
+                <div className="font-mono text-foreground tracking-widest text-sm">OUTPUT</div>
+              </div>
               <div className="flex items-center gap-2 font-mono text-[10px] text-primary">
                 <div className="w-1.5 h-1.5 bg-primary rounded-full animate-pulse shadow-[0_0_12px_rgba(16,185,129,0.8)]" />
                 DELIVERED
