@@ -1,7 +1,17 @@
+import Link from "next/link";
 import { SignalTicker } from "@/components/ui/signal-ticker";
 import { InteractiveChannels } from "@/components/ui/interactive-channels";
 import { LiveTerminal } from "@/components/ui/live-terminal";
 import { Footer } from "@/components/layout/footer";
+
+const VERTICALS = [
+  { slug: "wine-and-spirits", label: "[WINE & SPIRITS]",   signal: "1,847 distributors · US three-tier system mapped",                href: "/verticals/wine-and-spirits" },
+  { slug: "insurance",        label: "[INSURANCE]",        signal: "~600K producers · TX·FL·NY·IL·CA · line-of-authority segmented",  href: "/verticals/insurance" },
+  { slug: "factoring",        label: "[FACTORING]",        signal: "UCC-1 × EIDL · borrower-debt + distress signal",                  href: "/verticals/factoring" },
+  { slug: "vertical-saas",    label: "[VERTICAL SAAS]",    signal: "DOL 5500 × SBA · plan sponsor + 35-yr borrower history",          href: "/verticals/vertical-saas" },
+  { slug: "private-equity",   label: "[PRIVATE EQUITY]",   signal: "SEC ADV × 990-PF · registrants + foundation principals",          href: "/verticals/private-equity" },
+  { slug: "real-estate",      label: "[REAL ESTATE]",      signal: "HMDA 60M+ × NYC property · LLC-principal bridge",                 href: "/verticals/real-estate" },
+];
 
 export default function Home() {
   return (
@@ -185,6 +195,44 @@ export default function Home() {
             <div className="absolute inset-0 bg-primary/5 blur-[100px] pointer-events-none" />
             <LiveTerminal />
           </div>
+        </div>
+      </section>
+
+      {/* SECTION 6.5 — Where the graph lands (verticals woven inline) */}
+      <section className="px-6 md:px-12 lg:px-24 py-24 border-b border-border/50 bg-[#0a0a0a]">
+        <div className="flex items-center gap-3 mb-8">
+          <div className="h-px w-8 bg-primary" />
+          <span className="font-mono text-primary text-xs tracking-widest uppercase">
+            The Arenas
+          </span>
+        </div>
+        <h2 className="text-3xl md:text-5xl font-heading mb-6 max-w-3xl">
+          Where the graph lands.
+        </h2>
+        <p className="font-mono text-muted-foreground text-sm max-w-2xl leading-relaxed mb-16">
+          The graph spans every regulator silo. The audiences fall out by vertical — each with its own primary-source cohort grain.
+        </p>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 border-t border-border/50">
+          {VERTICALS.map((v) => (
+            <Link
+              key={v.slug}
+              href={v.href}
+              className="group flex items-center justify-between gap-4 border-b border-border/50 py-6 hover:border-primary/40 transition-colors"
+            >
+              <div className="flex flex-col gap-2 min-w-0">
+                <span className="font-mono text-primary text-xs tracking-widest uppercase">
+                  {v.label}
+                </span>
+                <span className="font-mono text-sm text-muted-foreground leading-relaxed">
+                  {v.signal}
+                </span>
+              </div>
+              <span className="font-mono text-muted-foreground group-hover:text-primary transition-colors shrink-0">
+                ↗
+              </span>
+            </Link>
+          ))}
         </div>
       </section>
 
