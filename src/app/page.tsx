@@ -20,7 +20,7 @@ export default function Home() {
             Engineering applied to pipeline generation.
           </h1>
           <p className="font-mono text-muted-foreground text-sm md:text-base max-w-2xl leading-relaxed">
-            We build proprietary data pipelines, signal detection engines, and multi-channel sending infrastructure. Meetings booked. Pipeline attributed. No retainers for effort.
+            We've ingested every public US regulator silo into one queryable identity graph. FEC × HMDA × Form 990 × NMLS × SAM × GLEIF × more. Outbound wired to the cohorts that fall out. Pipeline attributed. No retainers for effort.
           </p>
         </div>
       </section>
