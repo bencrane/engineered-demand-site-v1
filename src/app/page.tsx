@@ -194,10 +194,10 @@ export default function Home() {
           </span>
         </div>
         <h2 className="text-3xl md:text-5xl font-heading mb-6">
-          Channels we <span className="text-primary italic">own</span>, at scale.
+          We reach them <span className="text-primary italic">where they are.</span>
         </h2>
         <p className="font-mono text-muted-foreground text-sm max-w-2xl leading-relaxed mb-16">
-          Email, voice, direct mail, LinkedIn — infrastructure we built ourselves, single-tenant and authenticated. We work the channel the signal lands on.
+          Each channel is infrastructure we've built — not tools we use. Signal data flows through, personalized messages flow out.
         </p>
         
         <InteractiveChannels />
@@ -241,24 +241,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SECTION 7 — Who we work with (Klaff-qualified frame closure) */}
+      {/* SECTION 7 — CTA / The Gate */}
       <section className="px-6 md:px-12 lg:px-24 py-32 flex flex-col items-center justify-center text-center bg-[#050505]">
         <div className="w-4 h-4 bg-primary mb-8 shadow-[0_0_15px_rgba(16,185,129,0.5)] animate-pulse" />
-        <div className="flex items-center gap-3 mb-6">
-          <div className="h-px w-8 bg-primary" />
-          <span className="font-mono text-primary text-xs tracking-widest uppercase">
-            Who we work with
-          </span>
-          <div className="h-px w-8 bg-primary" />
-        </div>
-        <h2 className="text-4xl md:text-6xl lg:text-7xl font-heading mb-10 max-w-3xl">
-          Three things have to be true.
+        <h2 className="text-5xl md:text-7xl font-heading mb-8">
+          Own Your Market.
         </h2>
-        <div className="font-mono text-muted-foreground text-sm md:text-base max-w-2xl mx-auto mb-12 leading-relaxed space-y-4">
-          <p>Capital allocators with a thesis — PE, family office, search funds, specialist brokers. Not first-time outbound buyers.</p>
-          <p>Deal-team capacity for new business — without a hiring cycle.</p>
-          <p>Decision speed at the pace of a fresh filing. Public-record signals decay in days.</p>
-        </div>
+        <p className="font-mono text-muted-foreground text-sm md:text-base max-w-2xl mx-auto mb-10 leading-relaxed">
+          Built for companies with a defined market and the sales capacity to close what we generate.
+        </p>
         <a
           href="mailto:team@engineereddemand.com"
           className="inline-flex items-center justify-center font-medium whitespace-nowrap h-14 px-8 font-mono text-sm uppercase tracking-widest bg-foreground text-background hover:bg-primary hover:text-black transition-all duration-300 rounded-none shadow-[0_0_0_rgba(16,185,129,0)] hover:shadow-[0_0_20px_rgba(16,185,129,0.4)]"
