@@ -30,7 +30,7 @@ export default function Home() {
             Engineering applied to pipeline generation.
           </h1>
           <p className="font-mono text-muted-foreground text-sm md:text-base max-w-2xl leading-relaxed">
-            We've ingested every public US regulator silo into one queryable identity graph. FEC × HMDA × Form 990 × NMLS × SAM × GLEIF × more. Outbound wired to the cohorts that fall out. Pipeline attributed. No retainers for effort.
+            The cross-regulator identity graph. We make markets between supply-side signal and demand-side capital. Channels are the execution layer.
           </p>
         </div>
       </section>
@@ -41,7 +41,7 @@ export default function Home() {
       {/* SECTION 3 — The Three Problems */}
       <section className="px-6 md:px-12 lg:px-24 py-24 border-b border-border/50 bg-[#0a0a0a]">
         <h2 className="text-3xl md:text-5xl font-heading mb-16 max-w-3xl">
-          Off-the-shelf tools fail in complex markets.
+          Three things that hold.
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-12">
           {/* Card 1 */}
@@ -50,7 +50,7 @@ export default function Home() {
               [01] The Silo Problem
             </span>
             <p className="font-mono text-sm text-muted-foreground leading-relaxed">
-              Standard vendors specialize in one regulator silo. CoreLogic owns mortgages. RCA owns CRE. Bloomberg is the expensive generalist. We resolve identity across all of them — FEC, HMDA, Form 990, NMLS, SAM, GLEIF, more — into one queryable graph. The cross-source bridge is the moat.
+              Most data vendors specialize in one regulator silo. CoreLogic owns mortgages. RCA owns CRE. Bloomberg is the expensive generalist. We resolve identity across all of them — FEC, HMDA, Form 990, NMLS, SAM, GLEIF — into one graph.
             </p>
           </div>
           {/* Card 2 */}
@@ -77,7 +77,7 @@ export default function Home() {
       {/* SECTION 4 — The Engine */}
       <section className="px-6 md:px-12 lg:px-24 py-24 border-b border-border/50">
         <h2 className="text-3xl md:text-5xl font-heading mb-6 max-w-3xl">
-          A pipeline engine built on regulator-grade signal.
+          A matching engine on regulator-grade signal.
         </h2>
         <p className="font-mono text-muted-foreground text-sm mb-16">
           Primary-source filings. Cross-source identity. Coordinated outbound.
