@@ -190,13 +190,19 @@ export default function Home() {
 
       {/* SECTION 7 — CTA / The Gate */}
       <section className="px-6 md:px-12 lg:px-24 py-32 flex flex-col items-center justify-center text-center bg-[#050505]">
-        <div className="w-4 h-4 bg-primary mb-8" />
+        <div className="w-4 h-4 bg-primary mb-8 shadow-[0_0_15px_rgba(16,185,129,0.5)] animate-pulse" />
         <h2 className="text-5xl md:text-7xl font-heading mb-8">
           Own Your Market.
         </h2>
-        <p className="font-mono text-muted-foreground text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
+        <p className="font-mono text-muted-foreground text-sm md:text-base max-w-2xl mx-auto mb-10 leading-relaxed">
           Built for companies with a defined market and the sales capacity to close what we generate.
         </p>
+        <a
+          href="mailto:team@engineereddemand.com"
+          className="inline-flex items-center justify-center font-medium whitespace-nowrap h-14 px-8 font-mono text-sm uppercase tracking-widest bg-foreground text-background hover:bg-primary hover:text-black transition-all duration-300 rounded-none shadow-[0_0_0_rgba(16,185,129,0)] hover:shadow-[0_0_20px_rgba(16,185,129,0.4)]"
+        >
+          Request Access
+        </a>
       </section>
 
       {/* Footer */}
