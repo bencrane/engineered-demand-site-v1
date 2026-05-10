@@ -60,7 +60,7 @@ export function VerticalSignals({ data }: { data: VerticalConfig["signals"] }) {
         <div className="flex flex-col gap-4 relative z-10 font-mono">
           {signals.length === 0 && (
             <div className="text-muted-foreground/40 animate-pulse mt-4">
-              Awaiting socket connection...
+              Awaiting socket connection…
             </div>
           )}
           
